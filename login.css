@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@600&family=Caveat+Brush&family=Dancing+Script&family=Fredoka+One&family=Literata:wght@200&family=Monoton&family=Montserrat:wght@400;500;600;800&family=Righteous&family=Yrsa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bree+Serif&family=Libre+Baskerville&family=Playfair+Display&family=Send+Flowers&display=swap');
+*{margin: 0px;
+padding: 0px;}
+.nav{ display: inline-block;
+  height: 10vh;
+ width: 100%;
+  /* position: fixed; */
+  z-index: 5;
+  background-color: white;
+  box-shadow: 0px 5px 25px rgb(19, 10, 10,0.3);
+
+}
+.nav ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ height: 50px;
+ 
+ 
+}
+.logo{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 150px;
+height: 50px; 
+}
+.logo p{font-family: 'Fredoka One', cursive;
+  color: rgb(40, 93, 209);
+  font-size: 30px;
+ /* animation: zoom 2s ease-in-out  infinite reverse ; */
+}
+@keyframes zoom { 
+  from{
+  font-size: 30px;
+  color: white;
+}
+to{
+  font-size: 24px;
+  color: orange;
+
+}
+  
+}
+.nav ul li{ 
+  margin: 0px 20px;
+  list-style: none;
+  margin-top: 15px;
+}
+.nav ul li:hover *{
+   color: rgb(5, 75, 226);;
+}
+
+.nav ul li i{
+  margin: 0px 15px;
+  font-size: 20px;
+  color: black;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.submenu{
+  display: none;
+}
+.nav ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 1px;
+  height: 140px;
+  width: 130px;
+
+}
+.nav ul li:hover .submenu ul{
+  display: block;
+  margin:10px ;
+}
+.nav ul li:hover .submenu ul li{
+  border-bottom: 1px solid black;
+  width: 80px;
+  margin-top: 15px;
+  text-align: center;
+  
+}
+.nav ul li:hover .submenu ul li a{
+  text-align: center;
+  font-size: 20px;
+ 
+  
+}
+
+ ul li:hover .submenu ul li:last-child{
+  border-bottom: none;
+  text-align: center;
+}
+/* BANNER STARTS*/
+.banner{
+  height: 80vh;
+  display: flex;
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0px 5px 25px rgb(19, 10, 10,0.8);
+
+}
+.text{ width: 70%;
+  
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.heading{ 
+  
+display: flex;
+flex-direction: column;
+  justify-content: center;
+ 
+}
+.heading p{
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  font-family: 'Monoton', cursive;
+  font-weight: bolder;
+  text-shadow: 8px 7px 15px rgb(0, 0, 0);
+  
+  font-size: 60px;
+  color: rgb(72, 128, 248);
+  animation: blue 1s ease-in  1  ;
+}
+.text1{ background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  display: flex;
+  height: 37%;
+  width: 37%;
+  border-radius: 500px;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 10px 10px; 
+  box-shadow:  0px 5px 25px rgb(253, 249, 253);
+}
+.text1 p{ text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 32px;
+  font-weight: 600;
+  color:  white;
+}
+
+.image{ 
+  height: 100%;
+  width: 100%;
+}
+.image img{ margin-left: 180px;
+  height: 100%;
+  width: 80%;
+}
+/* BANNER ENDS */
+/* LOGIN STARTS */
+.outer{
+   margin-top: 50px;  
+   height: 70vh;
+   width: 60vw;
+   margin-left: 25%;
+   border: 2px solid rgb(42, 35, 35);
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0px 5px 15px black;
+   background-image: url("loginbac.jpg");
+   background-size: 100% 100%;
+   visibility: 0.8;
+ }
+ .title
+ { margin-top: 80px;
+   display: flex;
+   justify-content: center;
+
+ }
+ .title p{ color: white;
+  font-size: 42px;
+  font-weight: 800;
+  font-family: 'Aclonica', sans-serif;
+  text-decoration: underline;
+ }
+ .user{
+  margin-top: 60px; 
+ }
+ .user label{
+ 
+  color: white;
+  font-size: 28px ;
+  font-family: 'Aclonica', sans-serif;
+  
+}
+.user input{ 
+  margin-top: 10px; 
+  display: block;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 20px;
+ 
+  border-radius: 5px;
+}
+.pass{
+  margin-top: 10px; 
+}
+.pass label{
+  
+  color: white;
+  font-size: 28px ;
+  font-family: 'Aclonica', sans-serif;
+  
+}
+.pass input{
+  margin-top: 10px; 
+  display: block;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 20px;
+  
+  border-radius: 5px;
+}
+.submitform{
+  margin-top: 10px; 
+ 
+}
+.submitform input{
+  margin-top: 10px; 
+  padding: 3px;
+  display: block;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 20px;
+ box-shadow: 0px 3px 3px gray;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+ 
+}
+.submitform input:hover{
+  box-shadow: 1px 3px 3px rgb(254, 246, 246);
+ 
+}
+/* LOGIN ENDS */
+
+.end{ margin-top: 100px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+
+ background-image: url("https://schooldekho.com/Index/images/banner2.jpg");
+ background-size: 100% 100%;
+}
+.connect{
+
+  width: 80%;
+  height: 60%;
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.connect p{
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 5px 5px 3px rgb(0, 0, 0);
+}
+.connect p:hover{
+  text-shadow: 5px 5px 3px white;
+  color: rgb(0, 0, 0);
+}
+.connect form{
+  display: flex;
+  justify-content: center;
+width: 60%;
+flex-direction: column;
+}
+.client-name input{
+  text-transform: uppercase;
+  margin-left: 20px;
+  border-radius: 2px;
+  height: 20px;
+  width: 300px;
+  border: 2px solid black;
+  font-family: 'Fredoka One', cursive;
+  padding: 1px;
+}
+.client-mail label{
+  color: black;
+  font-family: 'Fredoka One', cursive;
+}
+.client-name label{
+  color:black;
+  font-family: 'Fredoka One', cursive;
+}
+.client-mail input{
+
+  margin-left: 20px;
+  border-radius: 2px;
+  height: 20px;
+  width: 300px;
+  border: 2px solid black;
+  font-family: 'Fredoka One', cursive;
+  padding: 1px;
+  
+}
+.client-name{margin-top: 20px ;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  box-shadow: 5px 5px 3px rgb(8, 6, 6);;
+  justify-content: center;
+  background-color: white;
+}
+.client-mail{margin-top: 10px ;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  box-shadow: 5px 5px 3px rgb(0, 0, 0);;
+  justify-content: center;
+  background-color: white;
+}
+.submit input { 
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+background-color: white;
+font-family: 'Fredoka One', cursive;
+
+}
+.submit input:hover{
+  text-shadow: 5px 5px 3px white;
+  color: rgb(0, 0, 0);
+}
+.query{
+  margin-top: 10px ;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  box-shadow: 5px 5px 3px rgb(0, 0, 0);;
+  justify-content: center;
+  background-color: white;
+}
+.query label{
+  color:black;
+  font-family: 'Fredoka One', cursive;
+}
+.query input{
+
+  margin-left: 20px;
+  border-radius: 2px;
+  height: 20px;
+  width: 300px;
+  border: 2px solid black;
+  font-family: 'Fredoka One', cursive;
+  padding: 1px;
+}
+/* .side{
+  border:1px solid white;
+  width: 40%;
+  height: 100%;
+} */
+/* ICONS */
+.icons{
+  /* border: 10px solid black; */
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.iconic{
+  width: 100px ;
+  height: 100px;
+  margin: 30px 80px;
+  
+}
+
+.iconic a i{
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+ 
+}
+ .icons  a i:hover{
+  color: blue;
+ 
+  
+} 
+
+.alertgreen{
+  height: 5vh;
+  background-color: rgb(131, 244, 131);
+}
+.alertgreen p{
+  colow:white;
+}
+.alertred{
+  height: 5vh;
+  background-color: rgb(250, 107, 96);
+  
+}
+.alertred p{
+  color: white;
+}
